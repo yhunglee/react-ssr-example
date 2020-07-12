@@ -24,4 +24,8 @@ const UserList = () => {
   );
 };
 
+UserList.getInitialData = async (store) => {
+  return store.dispatch(fetchUsers());
+};
+
 export default UserList;
